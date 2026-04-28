@@ -1,0 +1,397 @@
+/* ==========================================================================
+   Giodc Custom Fee per Product or Category – Admin Styles
+   ========================================================================== */
+
+/* ------------------------------------------------------------------
+   Wrap & layout
+   ------------------------------------------------------------------ */
+.giodc-fee-wrap {
+    max-width: 1200px;
+}
+
+.giodc-back-link {
+    display: inline-block;
+    margin: 6px 0 16px;
+    color: #2271b1;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.giodc-back-link:hover {
+    color: #135e96;
+    text-decoration: underline;
+}
+
+/* ------------------------------------------------------------------
+   Post-box overrides (sidebar layout)
+   ------------------------------------------------------------------ */
+#post-body.columns-2 {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 20px;
+    align-items: start;
+}
+
+#post-body-content {
+    min-width: 0;
+}
+
+#postbox-container-1 {
+    min-width: 0;
+}
+
+.giodc-postbox {
+    margin-bottom: 16px;
+}
+
+.giodc-postbox .hndle {
+    cursor: default;
+    font-size: 14px;
+    padding: 10px 12px;
+    border-bottom: 1px solid #dcdcde;
+}
+
+.giodc-postbox .inside {
+    padding: 12px 14px 14px;
+    margin: 0;
+}
+
+/* ------------------------------------------------------------------
+   Form table
+   ------------------------------------------------------------------ */
+.giodc-form-table th {
+    width: 180px;
+    padding: 12px 10px 12px 0;
+    font-weight: 600;
+    vertical-align: top;
+    line-height: 1.4;
+}
+
+.giodc-form-table td {
+    padding: 10px 0;
+}
+
+.giodc-form-table .required {
+    color: #d63638;
+}
+
+/* ------------------------------------------------------------------
+   Badges
+   ------------------------------------------------------------------ */
+.giodc-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 3px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+}
+
+.giodc-badge-prod {
+    background: #e6f2fa;
+    color: #1a6296;
+    border: 1px solid #b3d4ea;
+}
+
+.giodc-badge-cat {
+    background: #f0f6ec;
+    color: #2a7d2a;
+    border: 1px solid #b3d9a1;
+}
+
+.giodc-badge-wpml {
+    background: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffd966;
+}
+
+.giodc-badge-off {
+    background: #f6f7f7;
+    color: #646970;
+    border: 1px solid #dcdcde;
+}
+
+/* ------------------------------------------------------------------
+   Status toggle link
+   ------------------------------------------------------------------ */
+.giodc-status-toggle {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: opacity .15s;
+}
+
+.giodc-status-toggle:hover {
+    opacity: .8;
+}
+
+.giodc-status-toggle.status-active {
+    background: #d7f5e3;
+    color: #1a6b3a;
+    border-color: #9de0b8;
+}
+
+.giodc-status-toggle.status-inactive {
+    background: #fce8e8;
+    color: #8b1c1c;
+    border-color: #f5b5b5;
+}
+
+/* ------------------------------------------------------------------
+   List table
+   ------------------------------------------------------------------ */
+.giodc-fee-list-table .col-id {
+    width: 50px;
+}
+
+.giodc-actions {
+    white-space: nowrap;
+}
+
+.giodc-actions .button {
+    margin-right: 4px;
+}
+
+.giodc-btn-delete {
+    color: #b32d2e !important;
+    border-color: #d5a6a6 !important;
+}
+
+.giodc-btn-delete:hover {
+    background: #fce8e8 !important;
+    border-color: #b32d2e !important;
+}
+
+/* ------------------------------------------------------------------
+   Empty state
+   ------------------------------------------------------------------ */
+.giodc-fee-empty {
+    background: #fff;
+    border: 1px solid #dcdcde;
+    border-radius: 4px;
+    padding: 40px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.giodc-fee-empty p {
+    color: #646970;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+/* ------------------------------------------------------------------
+   Fee Tiers table
+   ------------------------------------------------------------------ */
+.giodc-tiers-wrap {
+    overflow-x: auto;
+}
+
+.giodc-tiers-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.giodc-tiers-table thead th {
+    background: #f6f7f7;
+    border: 1px solid #dcdcde;
+    padding: 7px 12px;
+    font-weight: 600;
+    text-align: center;
+    color: #1d2327;
+}
+
+.giodc-tiers-table tbody tr.alternate {
+    background: #f6f7f7;
+}
+
+.giodc-tiers-table tbody tr:hover {
+    background: #e8f0fa;
+}
+
+.giodc-qty-cell {
+    border: 1px solid #dcdcde;
+    padding: 6px 10px;
+    text-align: center;
+    width: 48px;
+    color: #50575e;
+    font-size: 12px;
+}
+
+.giodc-fee-cell {
+    border: 1px solid #dcdcde;
+    padding: 4px 10px;
+    text-align: center;
+    width: 110px;
+}
+
+.giodc-tier-input {
+    width: 88px !important;
+    text-align: right;
+}
+
+/* ------------------------------------------------------------------
+   Sidebar: publish box
+   ------------------------------------------------------------------ */
+.giodc-publish-row {
+    margin-bottom: 10px;
+}
+
+.giodc-switch-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.giodc-publish-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 14px;
+    padding-top: 12px;
+    border-top: 1px solid #dcdcde;
+}
+
+/* ------------------------------------------------------------------
+   Help list (How it works)
+   ------------------------------------------------------------------ */
+.giodc-help-list {
+    margin: 0;
+    padding-left: 16px;
+    list-style: disc;
+}
+
+.giodc-help-list li {
+    font-size: 12px;
+    color: #50575e;
+    line-height: 1.6;
+    margin-bottom: 4px;
+}
+
+/* ------------------------------------------------------------------
+   Custom item picker (replaces Select2)
+   ------------------------------------------------------------------ */
+
+.giodc-picker {
+    position: relative;
+    max-width: 500px;
+}
+
+.giodc-picker__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-bottom: 6px;
+}
+
+.giodc-picker__search {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 10px;
+    border: 1px solid #8c8f94;
+    border-radius: 3px;
+    font-size: 13px;
+    color: #1d2327;
+    background: #fff;
+    line-height: 1.5;
+    outline: none;
+}
+
+.giodc-picker__search:focus {
+    border-color: #2271b1;
+    box-shadow: 0 0 0 1px #2271b1;
+}
+
+.giodc-picker__results {
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 0;
+    right: 0;
+    z-index: 99999;
+    background: #fff;
+    border: 1px solid #8c8f94;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .15);
+    max-height: 280px;
+    overflow-y: auto;
+    padding: 4px 0;
+    margin: 0;
+    list-style: none;
+}
+
+.giodc-picker__item {
+    padding: 7px 12px;
+    font-size: 13px;
+    color: #1d2327;
+    cursor: pointer;
+    background: #fff;
+    list-style: none;
+}
+
+.giodc-picker__item:hover,
+.giodc-picker__item.is-focused {
+    background: #2271b1;
+    color: #fff;
+    outline: none;
+}
+
+.giodc-picker__no-results {
+    padding: 7px 12px;
+    font-size: 12px;
+    color: #8c8f94;
+    font-style: italic;
+    list-style: none;
+}
+
+.giodc-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: #2271b1;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 12px;
+    padding: 2px 6px 2px 8px;
+    max-width: 100%;
+}
+
+.giodc-tag__label {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.giodc-tag__remove {
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, .8);
+    cursor: pointer;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.giodc-tag__remove:hover {
+    color: #fff;
+}
+
+/* ------------------------------------------------------------------
+   Responsive: stack columns on smaller screens
+   ------------------------------------------------------------------ */
+@media (max-width: 960px) {
+    #post-body.columns-2 {
+        grid-template-columns: 1fr;
+    }
+}
