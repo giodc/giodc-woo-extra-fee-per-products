@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       Giodc Custom Fee per Product or Category - Quantity based
- * Plugin URI:        https://github.com/giodc/giodc-extra-fee-per-products
+ * Plugin URI:        https://github.com/giodc/giodc-woo-extra-fee-per-products
  * Description:       Adds a custom quantity-based fee to the WooCommerce cart for selected products or product categories. Supports up to 36 quantity tiers and is WPML-compatible.
  * Version:           1.0.0
  * Author:            Giodc

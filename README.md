@@ -1,4 +1,4 @@
-# Giodc Extra Fee per Products
+# Giodc Woo Extra Fee per Products
 
 A WooCommerce plugin that adds **quantity-based cart fees** for selected products or product categories.
 
@@ -38,7 +38,7 @@ When a customer adds matching products to the cart, the plugin evaluates the tot
 
 ## Installation
 
-1. Upload the `giodc-extra-fee-per-products` folder to `/wp-content/plugins/`
+1. Upload the `giodc-woo-extra-fee-per-products` folder to `/wp-content/plugins/`
 2. Activate the plugin through **Plugins → Installed Plugins** in WordPress admin
 3. Navigate to **WooCommerce → Qty Fee Rules** to create your first rule
 
@@ -47,8 +47,8 @@ When a customer adds matching products to the cart, the plugin evaluates the tot
 ## File structure
 
 ```
-giodc-extra-fee-per-products/
-├── giodc-extra-fee-per-products.php   # Main plugin file
+giodc-woo-extra-fee-per-products/
+├── giodc-woo-extra-fee-per-products.php   # Main plugin file
 ├── includes/
 │   ├── class-giodc-fee-admin.php      # Admin UI & AJAX handlers
 │   ├── class-giodc-fee-cart.php       # Cart fee calculation
